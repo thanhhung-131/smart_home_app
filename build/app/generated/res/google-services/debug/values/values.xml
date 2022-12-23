@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">484971886880-onn1tj18pktooima67af6oeejsnv4gq8.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">484971886880</string>
+    <string name="google_api_key" translatable="false">AIzaSyDNI8hHYF2ofMmqgS-opnDgtpzM-RXkxFY</string>
+    <string name="google_app_id" translatable="false">1:484971886880:android:55aa81f88183525ffbbf45</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDNI8hHYF2ofMmqgS-opnDgtpzM-RXkxFY</string>
+    <string name="google_storage_bucket" translatable="false">smart-home-twohandm.appspot.com</string>
+    <string name="project_id" translatable="false">smart-home-twohandm</string>
+</resources>

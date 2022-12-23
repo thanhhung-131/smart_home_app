@@ -1,0 +1,11 @@
+/home/dell/PBL4/smart_home/build/linux/x64/debug/bundle/smart_home
+/home/dell/PBL4/smart_home/build/linux/x64/debug/bundle/data/icudtl.dat
+/home/dell/PBL4/smart_home/build/linux/x64/debug/bundle/lib/libflutter_linux_gtk.so
+/home/dell/PBL4/smart_home/build/linux/x64/debug/bundle/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
+/home/dell/PBL4/smart_home/build/linux/x64/debug/bundle/data/flutter_assets/shaders/ink_sparkle.frag
+/home/dell/PBL4/smart_home/build/linux/x64/debug/bundle/data/flutter_assets/AssetManifest.json
+/home/dell/PBL4/smart_home/build/linux/x64/debug/bundle/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+/home/dell/PBL4/smart_home/build/linux/x64/debug/bundle/data/flutter_assets/version.json
+/home/dell/PBL4/smart_home/build/linux/x64/debug/bundle/data/flutter_assets/NOTICES.Z
+/home/dell/PBL4/smart_home/build/linux/x64/debug/bundle/data/flutter_assets/FontManifest.json
+/home/dell/PBL4/smart_home/build/linux/x64/debug/bundle/data/flutter_assets/kernel_blob.bin

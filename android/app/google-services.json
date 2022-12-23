@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "484971886880",
+    "project_id": "smart-home-twohandm",
+    "storage_bucket": "smart-home-twohandm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:484971886880:android:55aa81f88183525ffbbf45",
+        "android_client_info": {
+          "package_name": "org.controls.smart_home"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "484971886880-onn1tj18pktooima67af6oeejsnv4gq8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNI8hHYF2ofMmqgS-opnDgtpzM-RXkxFY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "484971886880-onn1tj18pktooima67af6oeejsnv4gq8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "484971886880-hh8j7hrl5j5g4d68lo5i9p2186r7208l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.smartHome"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
