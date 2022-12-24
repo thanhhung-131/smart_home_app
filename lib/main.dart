@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:smart_home/constants/routes.dart';
 import 'package:smart_home/views/login_view.dart';
 import 'package:smart_home/views/verify_email_view.dart';
 
@@ -18,8 +19,9 @@ Future<void> main() async {
         ),
         home: const Homepage(),
         routes: {
-          '/login': (context) => const LoginView(),
-          '/register/': (context) => const RegisterView(),
+          loginRoute: (context) => const LoginView(),
+          registerRoute: (context) => const RegisterView(),
+          controllerRoute: (context) => const SmartHomeControls(),
         }),
   );
 }
@@ -82,7 +84,7 @@ class _SmartHomeControlsState extends State<SmartHomeControls> {
                   if (shouldLogout) {
                     await FirebaseAuth.instance.signOut();
                     Navigator.of(context).pushNamedAndRemoveUntil(
-                      '/login/',
+                      loginRoute,
                       (_) => false,
                     );
                   }
