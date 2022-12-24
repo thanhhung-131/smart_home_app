@@ -29,10 +29,6 @@ Future<void> main() async {
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
-  StepState() {
-    // TODO: implement StepState
-    throw UnimplementedError();
-  }
 
   @override
   Widget build(BuildContext context) {
