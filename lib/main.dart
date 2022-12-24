@@ -22,6 +22,7 @@ Future<void> main() async {
           loginRoute: (context) => const LoginView(),
           registerRoute: (context) => const RegisterView(),
           controllerRoute: (context) => const SmartHomeControls(),
+          VerifyEmailRoute: (context) => const VerifyEmailView(),
         }),
   );
 }
@@ -131,4 +132,3 @@ Future<bool> showLogOutDialog(BuildContext context) {
     },
   ).then((value) => value ?? false);
 }
-
