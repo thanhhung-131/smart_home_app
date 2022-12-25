@@ -63,7 +63,7 @@
     },
     {
       "name": "firebase_auth",
-      "rootUri": "file:///home/dell/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-4.2.2",
+      "rootUri": "file:///home/dell/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-4.2.3",
       "packageUri": "lib/",
       "languageVersion": "2.16"
     },
@@ -75,7 +75,7 @@
     },
     {
       "name": "firebase_auth_web",
-      "rootUri": "file:///home/dell/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth_web-5.2.2",
+      "rootUri": "file:///home/dell/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth_web-5.2.3",
       "packageUri": "lib/",
       "languageVersion": "2.16"
     },
@@ -129,7 +129,7 @@
     },
     {
       "name": "intl",
-      "rootUri": "file:///home/dell/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/intl-0.18.0",
+      "rootUri": "file:///home/dell/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/intl-0.17.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -236,7 +236,7 @@
       "languageVersion": "2.18"
     }
   ],
-  "generated": "2022-12-23T03:21:22.610185Z",
+  "generated": "2022-12-24T18:54:51.748140Z",
   "generator": "pub",
   "generatorVersion": "2.18.6"
 }
