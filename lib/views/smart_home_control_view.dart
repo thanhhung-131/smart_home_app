@@ -140,57 +140,126 @@ class _SmartHomeControlsState extends State<SmartHomeControls> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Home Controller'),
-        actions: [
-          PopupMenuButton<MenuAction>(
-            onSelected: (value) async {
-              switch (value) {
-                case MenuAction.logout:
-                  final shouldLogout = await showLogOutDialog(context);
-                  if (shouldLogout) {
-                    await AuthService.firebase().logOut();
-                    Navigator.of(context).pushNamedAndRemoveUntil(
-                      loginRoute,
-                      (_) => false,
-                    );
-                  }
-              }
-            },
-            itemBuilder: (context) {
-              return const [
-                PopupMenuItem(
-                  value: MenuAction.logout,
-                  child: Text('Log out'),
-                )
-              ];
-            },
-          )
-        ],
-      ),
-      body: Center(
-        child: Column(
-          children: [
-            Container(
-                padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(6),
-                  color: const Color.fromARGB(255, 255, 235, 183),
-                  boxShadow: const [
-                    BoxShadow(color: Colors.white10, spreadRadius: 2),
-                  ],
+        appBar: AppBar(
+          title: const Text('Home Controller'),
+          actions: [
+            PopupMenuButton<MenuAction>(
+              onSelected: (value) async {
+                switch (value) {
+                  case MenuAction.logout:
+                    final shouldLogout = await showLogOutDialog(context);
+                    if (shouldLogout) {
+                      await AuthService.firebase().logOut();
+                      Navigator.of(context).pushNamedAndRemoveUntil(
+                        loginRoute,
+                        (_) => false,
+                      );
+                    }
+                }
+              },
+              itemBuilder: (context) {
+                return const [
+                  PopupMenuItem(
+                    value: MenuAction.logout,
+                    child: Text('Log out'),
+                  )
+                ];
+              },
+            )
+          ],
+        ),
+        body: Column(children: [
+          Container(
+            height: 200,
+            width: 320,
+            color: c,
+            margin: const EdgeInsets.fromLTRB(0, 5, 0, 5),
+            child: GridView.count(
+              crossAxisCount: 2,
+              children: [
+                Container(
+                  margin: const EdgeInsets.all(10),
+                  height: 5,
+                  color: Colors.white10,
                 ),
-                margin: const EdgeInsets.all(4),
-                child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
+                Container(
+                  margin: const EdgeInsets.all(10),
+                  height: 5,
+                  color: Colors.white,
+                )
+              ],
+            ),
+          ),
+          Container(
+            padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(6),
+              color: const Color.fromARGB(223, 95, 223, 218),
+              boxShadow: const [
+                BoxShadow(color: Colors.white10, spreadRadius: 2),
+              ],
+            ),
+            margin: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                FlutterSwitch(
+                  height: 25.0,
+                  width: 60.0,
+                  padding: 4.0,
+                  toggleSize: 15.0,
+                  activeIcon: const Icon(Icons.light_mode),
+                  borderRadius: 20.0,
+                  activeColor: c,
+                  value: _toilet,
+                  onToggle: (value) {
+                    if (value) {
+                      setState(() {
+                        _toilet = value;
+                        toilet(context, 'toilet/on');
+                      });
+                    } else {
+                      setState(() {
+                        _toilet = value;
+                        toilet(context, 'toilet/off');
+                      });
+                    }
+                  },
+                ),
+                const Text('Turn on all light'),
+              ],
+            ),
+          ),
+          GridView.count(
+              crossAxisCount: 2,
+              shrinkWrap: true,
+              padding: const EdgeInsets.fromLTRB(20, 5, 20, 5),
+              children: [
+                Container(
+                    padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(6),
+                      color: const Color.fromARGB(223, 95, 223, 218),
+                      boxShadow: const [
+                        BoxShadow(color: Colors.white10, spreadRadius: 2),
+                      ],
+                    ),
+                    margin: const EdgeInsets.all(2),
+                    child: Column(children: [
+                      const ImageIcon(
+                        AssetImage('assets/interior-design.png'),
+                        size: 50,
+                      ),
+                      const SizedBox(
+                        height: 12,
+                      ),
                       FlutterSwitch(
-                        height: 20.0,
-                        width: 40.0,
+                        height: 25.0,
+                        width: 60.0,
                         padding: 4.0,
                         toggleSize: 15.0,
                         activeIcon: const Icon(Icons.light_mode),
-                        borderRadius: 10.0,
+                        borderRadius: 20.0,
                         activeColor: c,
                         value: _living,
                         onToggle: (value) {
@@ -207,33 +276,32 @@ class _SmartHomeControlsState extends State<SmartHomeControls> {
                           }
                         },
                       ),
-                      const SizedBox(
-                        height: 8,
-                      ),
-                      const Text('Living Room',
-                          style: TextStyle(
-                              color: Color.fromARGB(255, 49, 32, 224)))
                     ])),
-            Container(
-                padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(6),
-                  color: const Color.fromARGB(223, 95, 223, 218),
-                  boxShadow: const [
-                    BoxShadow(color: Colors.white10, spreadRadius: 2),
-                  ],
-                ),
-                margin: const EdgeInsets.all(4),
-                child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
+                Container(
+                    padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(6),
+                      color: const Color.fromARGB(223, 95, 223, 218),
+                      boxShadow: const [
+                        BoxShadow(color: Colors.white10, spreadRadius: 2),
+                      ],
+                    ),
+                    margin: const EdgeInsets.all(2),
+                    child: Column(children: [
+                      const ImageIcon(
+                        AssetImage('assets/garage.png'),
+                        size: 50,
+                      ),
+                      const SizedBox(
+                        height: 12,
+                      ),
                       FlutterSwitch(
-                        height: 20.0,
-                        width: 40.0,
+                        height: 25.0,
+                        width: 60.0,
                         padding: 4.0,
                         toggleSize: 15.0,
                         activeIcon: const Icon(Icons.light_mode),
-                        borderRadius: 10.0,
+                        borderRadius: 20.0,
                         activeColor: c,
                         value: _gara,
                         onToggle: (value) {
@@ -250,31 +318,33 @@ class _SmartHomeControlsState extends State<SmartHomeControls> {
                           }
                         },
                       ),
-                      const SizedBox(
-                        height: 8,
-                      ),
-                      const Text('Gara')
+                      const Text('Garage')
                     ])),
-            Container(
-                padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(6),
-                  color: const Color.fromARGB(223, 95, 223, 218),
-                  boxShadow: const [
-                    BoxShadow(color: Colors.white10, spreadRadius: 2),
-                  ],
-                ),
-                margin: const EdgeInsets.all(4),
-                child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
+                Container(
+                    padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(6),
+                      color: const Color.fromARGB(223, 95, 223, 218),
+                      boxShadow: const [
+                        BoxShadow(color: Colors.white10, spreadRadius: 2),
+                      ],
+                    ),
+                    margin: const EdgeInsets.all(2),
+                    child: Column(children: [
+                      const ImageIcon(
+                        AssetImage('assets/bedroom.png'),
+                        size: 50,
+                      ),
+                      const SizedBox(
+                        height: 12,
+                      ),
                       FlutterSwitch(
-                        height: 20.0,
-                        width: 40.0,
+                        height: 25.0,
+                        width: 60.0,
                         padding: 4.0,
                         toggleSize: 15.0,
                         activeIcon: const Icon(Icons.light_mode),
-                        borderRadius: 10.0,
+                        borderRadius: 20.0,
                         activeColor: c,
                         value: _bedrom,
                         onToggle: (value) {
@@ -291,31 +361,33 @@ class _SmartHomeControlsState extends State<SmartHomeControls> {
                           }
                         },
                       ),
-                      const SizedBox(
-                        height: 8,
-                      ),
                       const Text('Bedroom')
                     ])),
-            Container(
-                padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(6),
-                  color: const Color.fromARGB(223, 95, 223, 218),
-                  boxShadow: const [
-                    BoxShadow(color: Colors.white10, spreadRadius: 2),
-                  ],
-                ),
-                margin: const EdgeInsets.all(4),
-                child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
+                Container(
+                    padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(6),
+                      color: const Color.fromARGB(223, 95, 223, 218),
+                      boxShadow: const [
+                        BoxShadow(color: Colors.white10, spreadRadius: 2),
+                      ],
+                    ),
+                    margin: const EdgeInsets.all(2),
+                    child: Column(children: [
+                      const ImageIcon(
+                        AssetImage('assets/public-toilet.png'),
+                        size: 50,
+                      ),
+                      const SizedBox(
+                        height: 12,
+                      ),
                       FlutterSwitch(
-                        height: 20.0,
-                        width: 40.0,
+                        height: 25.0,
+                        width: 60.0,
                         padding: 4.0,
                         toggleSize: 15.0,
                         activeIcon: const Icon(Icons.light_mode),
-                        borderRadius: 10.0,
+                        borderRadius: 20.0,
                         activeColor: c,
                         value: _toilet,
                         onToggle: (value) {
@@ -332,63 +404,10 @@ class _SmartHomeControlsState extends State<SmartHomeControls> {
                           }
                         },
                       ),
-                      const SizedBox(
-                        height: 8,
-                      ),
                       const Text('Toilet')
                     ])),
-            // FutureBuilder(
-            //     future: getTemp(),
-            //     builder: (BuildContext context, AsyncSnapshot<String> text) {
-            //         if (text.hasData) {
-            //           return Text("Gas: ${text.data}");
-            //         }
-            //         if (text.hasError) {
-            //           return Text(text.error.toString());
-            //         } else {
-            //           return const CircularProgressIndicator();
-            //         }
-            //     }),
-            // FutureBuilder(
-            //     future: getHumid(),
-            //     builder: (BuildContext context, AsyncSnapshot<String> text) {
-            //         if (text.hasData) {
-            //           return Text("Humidity: ${text.data}%");
-            //         }
-            //         if (text.hasError) {
-            //           return Text(text.error.toString());
-            //         } else {
-            //           return const CircularProgressIndicator();
-            //       }
-            //     }),
-            // FutureBuilder(
-            //     future: getGas(),
-            //     builder: (BuildContext context, AsyncSnapshot<String> text) {
-            //         if (text.hasData) {
-            //           return Text("Gas: ${text.data}");
-            //         }
-            //         if (text.hasError) {
-            //           return Text(text.error.toString());
-            //         } else {
-            //           return const CircularProgressIndicator();
-            //         }
-            //     }),
-            // FutureBuilder(
-            //     future: getLight(),
-            //     builder: (BuildContext context, AsyncSnapshot<String> text) {
-            //       if (text.hasData) {
-            //         return Text("Gas: ${text.data}");
-            //       }
-            //       if (text.hasError) {
-            //         return Text(text.error.toString());
-            //       } else {
-            //         return const CircularProgressIndicator();
-            //       }
-            //     })
-          ],
-        ),
-      ),
-    );
+              ])
+        ]));
   }
 }
 
