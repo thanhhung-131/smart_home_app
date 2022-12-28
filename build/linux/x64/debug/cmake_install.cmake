@@ -63,7 +63,7 @@ file(INSTALL DESTINATION "/home/dell/PBL4/smart_home/build/linux/x64/debug/bundl
      NOT IS_SYMLINK "$ENV{DESTDIR}/home/dell/PBL4/smart_home/build/linux/x64/debug/bundle/smart_home")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}/home/dell/PBL4/smart_home/build/linux/x64/debug/bundle/smart_home"
-         OLD_RPATH "/home/dell/PBL4/smart_home/linux/flutter/ephemeral:"
+         OLD_RPATH "/home/dell/PBL4/smart_home/build/linux/x64/debug/plugins/url_launcher_linux:/home/dell/PBL4/smart_home/linux/flutter/ephemeral:"
          NEW_RPATH "$ORIGIN/lib")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/snap/flutter/current/usr/bin/strip" "$ENV{DESTDIR}/home/dell/PBL4/smart_home/build/linux/x64/debug/bundle/smart_home")
@@ -96,6 +96,18 @@ file(INSTALL DESTINATION "/home/dell/PBL4/smart_home/build/linux/x64/debug/bundl
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimex" OR NOT CMAKE_INSTALL_COMPONENT)
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "/home/dell/PBL4/smart_home/build/linux/x64/debug/bundle/lib/liburl_launcher_linux_plugin.so")
+  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+file(INSTALL DESTINATION "/home/dell/PBL4/smart_home/build/linux/x64/debug/bundle/lib" TYPE FILE FILES "/home/dell/PBL4/smart_home/build/linux/x64/debug/plugins/url_launcher_linux/liburl_launcher_linux_plugin.so")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xRuntimex" OR NOT CMAKE_INSTALL_COMPONENT)
   
   file(REMOVE_RECURSE "/home/dell/PBL4/smart_home/build/linux/x64/debug/bundle/data/flutter_assets")
   
@@ -116,6 +128,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/dell/PBL4/smart_home/build/linux/x64/debug/flutter/cmake_install.cmake")
+  include("/home/dell/PBL4/smart_home/build/linux/x64/debug/plugins/url_launcher_linux/cmake_install.cmake")
 
 endif()
 

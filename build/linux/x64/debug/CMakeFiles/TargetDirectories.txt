@@ -12,3 +12,10 @@
 /home/dell/PBL4/smart_home/build/linux/x64/debug/flutter/CMakeFiles/rebuild_cache.dir
 /home/dell/PBL4/smart_home/build/linux/x64/debug/flutter/CMakeFiles/edit_cache.dir
 /home/dell/PBL4/smart_home/build/linux/x64/debug/flutter/CMakeFiles/flutter_assemble.dir
+/home/dell/PBL4/smart_home/build/linux/x64/debug/plugins/url_launcher_linux/CMakeFiles/install/strip.dir
+/home/dell/PBL4/smart_home/build/linux/x64/debug/plugins/url_launcher_linux/CMakeFiles/install/local.dir
+/home/dell/PBL4/smart_home/build/linux/x64/debug/plugins/url_launcher_linux/CMakeFiles/install.dir
+/home/dell/PBL4/smart_home/build/linux/x64/debug/plugins/url_launcher_linux/CMakeFiles/list_install_components.dir
+/home/dell/PBL4/smart_home/build/linux/x64/debug/plugins/url_launcher_linux/CMakeFiles/rebuild_cache.dir
+/home/dell/PBL4/smart_home/build/linux/x64/debug/plugins/url_launcher_linux/CMakeFiles/edit_cache.dir
+/home/dell/PBL4/smart_home/build/linux/x64/debug/plugins/url_launcher_linux/CMakeFiles/url_launcher_linux_plugin.dir

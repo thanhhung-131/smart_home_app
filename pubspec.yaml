@@ -38,6 +38,12 @@ dependencies:
   cupertino_icons: ^1.0.2
   firebase_core: ^2.4.0
   firebase_auth: ^4.2.2
+  url_launcher: ^6.1.7
+  http: ^0.13.5
+  flutter_switch: ^0.3.2
+  lite_rolling_switch: ^1.0.0
+  auto_reload: ^1.0.0
+
 
 dev_dependencies:
   flutter_test:

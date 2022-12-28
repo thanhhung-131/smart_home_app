@@ -1,6 +1,7 @@
 /home/dell/PBL4/smart_home/build/linux/x64/debug/bundle/smart_home
 /home/dell/PBL4/smart_home/build/linux/x64/debug/bundle/data/icudtl.dat
 /home/dell/PBL4/smart_home/build/linux/x64/debug/bundle/lib/libflutter_linux_gtk.so
+/home/dell/PBL4/smart_home/build/linux/x64/debug/bundle/lib/liburl_launcher_linux_plugin.so
 /home/dell/PBL4/smart_home/build/linux/x64/debug/bundle/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
 /home/dell/PBL4/smart_home/build/linux/x64/debug/bundle/data/flutter_assets/shaders/ink_sparkle.frag
 /home/dell/PBL4/smart_home/build/linux/x64/debug/bundle/data/flutter_assets/AssetManifest.json

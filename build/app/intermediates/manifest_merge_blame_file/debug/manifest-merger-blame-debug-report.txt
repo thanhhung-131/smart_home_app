@@ -16,8 +16,8 @@
 15-->/home/dell/PBL4/smart_home/android/app/src/debug/AndroidManifest.xml:7:5-66
 15-->/home/dell/PBL4/smart_home/android/app/src/debug/AndroidManifest.xml:7:22-64
 16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-16-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:24:5-79
-16-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:24:22-76
+16-->[:connectivity_plus] /home/dell/PBL4/smart_home/build/connectivity_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-79
+16-->[:connectivity_plus] /home/dell/PBL4/smart_home/build/connectivity_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-76
 17
 18    <application
 19        android:name="android.app.Application"
@@ -87,118 +87,127 @@
 69-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:69:17-82
 70        </service>
 71
-72        <uses-library
-72-->[androidx.window:window:1.0.0-beta04] /home/dell/.gradle/caches/transforms-3/e1f53c96aa78f7b42431169b7cd59214/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
-73            android:name="androidx.window.extensions"
-73-->[androidx.window:window:1.0.0-beta04] /home/dell/.gradle/caches/transforms-3/e1f53c96aa78f7b42431169b7cd59214/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
-74            android:required="false" />
-74-->[androidx.window:window:1.0.0-beta04] /home/dell/.gradle/caches/transforms-3/e1f53c96aa78f7b42431169b7cd59214/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
-75        <uses-library
-75-->[androidx.window:window:1.0.0-beta04] /home/dell/.gradle/caches/transforms-3/e1f53c96aa78f7b42431169b7cd59214/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
-76            android:name="androidx.window.sidecar"
-76-->[androidx.window:window:1.0.0-beta04] /home/dell/.gradle/caches/transforms-3/e1f53c96aa78f7b42431169b7cd59214/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
-77            android:required="false" />
-77-->[androidx.window:window:1.0.0-beta04] /home/dell/.gradle/caches/transforms-3/e1f53c96aa78f7b42431169b7cd59214/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
-78
-79        <activity
-79-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:27:9-44:20
-80            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-80-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:28:13-80
-81            android:excludeFromRecents="true"
-81-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:29:13-46
-82            android:exported="true"
-82-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:30:13-36
-83            android:launchMode="singleTask"
-83-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:31:13-44
-84            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-84-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:32:13-72
-85            <intent-filter>
-85-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:33:13-43:29
-86                <action android:name="android.intent.action.VIEW" />
-86-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:34:17-69
-86-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:34:25-66
-87
-88                <category android:name="android.intent.category.DEFAULT" />
-88-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:36:17-76
-88-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:36:27-73
-89                <category android:name="android.intent.category.BROWSABLE" />
-89-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:37:17-78
-89-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:37:27-75
-90
-91                <data
-91-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:39:17-42:51
-92                    android:host="firebase.auth"
-92-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:40:21-49
-93                    android:path="/"
-93-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:41:21-37
-94                    android:scheme="genericidp" />
-94-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:42:21-48
-95            </intent-filter>
-96        </activity>
-97        <activity
-97-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:45:9-62:20
-98            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-98-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:46:13-79
-99            android:excludeFromRecents="true"
-99-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:47:13-46
-100            android:exported="true"
-100-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:48:13-36
-101            android:launchMode="singleTask"
-101-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:49:13-44
-102            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-102-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:50:13-72
-103            <intent-filter>
-103-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:51:13-61:29
-104                <action android:name="android.intent.action.VIEW" />
-104-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:34:17-69
-104-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:34:25-66
-105
-106                <category android:name="android.intent.category.DEFAULT" />
-106-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:36:17-76
-106-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:36:27-73
-107                <category android:name="android.intent.category.BROWSABLE" />
-107-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:37:17-78
-107-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:37:27-75
-108
-109                <data
-109-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:39:17-42:51
-110                    android:host="firebase.auth"
-110-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:40:21-49
-111                    android:path="/"
-111-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:41:21-37
-112                    android:scheme="recaptcha" />
-112-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:42:21-48
-113            </intent-filter>
-114        </activity>
-115
-116        <provider
-116-->[com.google.firebase:firebase-common:20.2.0] /home/dell/.gradle/caches/transforms-3/ef8423601b72496d12bca9ac87595f67/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:25:9-30:39
-117            android:name="com.google.firebase.provider.FirebaseInitProvider"
-117-->[com.google.firebase:firebase-common:20.2.0] /home/dell/.gradle/caches/transforms-3/ef8423601b72496d12bca9ac87595f67/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:26:13-77
-118            android:authorities="org.controls.smart_home.firebaseinitprovider"
-118-->[com.google.firebase:firebase-common:20.2.0] /home/dell/.gradle/caches/transforms-3/ef8423601b72496d12bca9ac87595f67/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:27:13-72
-119            android:directBootAware="true"
-119-->[com.google.firebase:firebase-common:20.2.0] /home/dell/.gradle/caches/transforms-3/ef8423601b72496d12bca9ac87595f67/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:28:13-43
-120            android:exported="false"
-120-->[com.google.firebase:firebase-common:20.2.0] /home/dell/.gradle/caches/transforms-3/ef8423601b72496d12bca9ac87595f67/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:29:13-37
-121            android:initOrder="100" />
-121-->[com.google.firebase:firebase-common:20.2.0] /home/dell/.gradle/caches/transforms-3/ef8423601b72496d12bca9ac87595f67/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:30:13-36
-122
-123        <activity
-123-->[com.google.android.gms:play-services-base:17.1.0] /home/dell/.gradle/caches/transforms-3/2f3aa72464889ee04298a4429d23aa5e/transformed/jetified-play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
-124            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-124-->[com.google.android.gms:play-services-base:17.1.0] /home/dell/.gradle/caches/transforms-3/2f3aa72464889ee04298a4429d23aa5e/transformed/jetified-play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+72        <activity
+72-->[:url_launcher_android] /home/dell/PBL4/smart_home/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-13:74
+73            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+73-->[:url_launcher_android] /home/dell/PBL4/smart_home/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-74
+74            android:exported="false"
+74-->[:url_launcher_android] /home/dell/PBL4/smart_home/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-37
+75            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+75-->[:url_launcher_android] /home/dell/PBL4/smart_home/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-71
+76
+77        <uses-library
+77-->[androidx.window:window:1.0.0-beta04] /home/dell/.gradle/caches/transforms-3/e1f53c96aa78f7b42431169b7cd59214/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+78            android:name="androidx.window.extensions"
+78-->[androidx.window:window:1.0.0-beta04] /home/dell/.gradle/caches/transforms-3/e1f53c96aa78f7b42431169b7cd59214/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+79            android:required="false" />
+79-->[androidx.window:window:1.0.0-beta04] /home/dell/.gradle/caches/transforms-3/e1f53c96aa78f7b42431169b7cd59214/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+80        <uses-library
+80-->[androidx.window:window:1.0.0-beta04] /home/dell/.gradle/caches/transforms-3/e1f53c96aa78f7b42431169b7cd59214/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+81            android:name="androidx.window.sidecar"
+81-->[androidx.window:window:1.0.0-beta04] /home/dell/.gradle/caches/transforms-3/e1f53c96aa78f7b42431169b7cd59214/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+82            android:required="false" />
+82-->[androidx.window:window:1.0.0-beta04] /home/dell/.gradle/caches/transforms-3/e1f53c96aa78f7b42431169b7cd59214/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+83
+84        <activity
+84-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:27:9-44:20
+85            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+85-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:28:13-80
+86            android:excludeFromRecents="true"
+86-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:29:13-46
+87            android:exported="true"
+87-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:30:13-36
+88            android:launchMode="singleTask"
+88-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:31:13-44
+89            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+89-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:32:13-72
+90            <intent-filter>
+90-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:33:13-43:29
+91                <action android:name="android.intent.action.VIEW" />
+91-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:34:17-69
+91-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:34:25-66
+92
+93                <category android:name="android.intent.category.DEFAULT" />
+93-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:36:17-76
+93-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:36:27-73
+94                <category android:name="android.intent.category.BROWSABLE" />
+94-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:37:17-78
+94-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:37:27-75
+95
+96                <data
+96-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:39:17-42:51
+97                    android:host="firebase.auth"
+97-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:40:21-49
+98                    android:path="/"
+98-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:41:21-37
+99                    android:scheme="genericidp" />
+99-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:42:21-48
+100            </intent-filter>
+101        </activity>
+102        <activity
+102-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:45:9-62:20
+103            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+103-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:46:13-79
+104            android:excludeFromRecents="true"
+104-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:47:13-46
+105            android:exported="true"
+105-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:48:13-36
+106            android:launchMode="singleTask"
+106-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:49:13-44
+107            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+107-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:50:13-72
+108            <intent-filter>
+108-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:51:13-61:29
+109                <action android:name="android.intent.action.VIEW" />
+109-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:34:17-69
+109-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:34:25-66
+110
+111                <category android:name="android.intent.category.DEFAULT" />
+111-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:36:17-76
+111-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:36:27-73
+112                <category android:name="android.intent.category.BROWSABLE" />
+112-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:37:17-78
+112-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:37:27-75
+113
+114                <data
+114-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:39:17-42:51
+115                    android:host="firebase.auth"
+115-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:40:21-49
+116                    android:path="/"
+116-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:41:21-37
+117                    android:scheme="recaptcha" />
+117-->[com.google.firebase:firebase-auth:21.1.0] /home/dell/.gradle/caches/transforms-3/db77909e02725043151ff28d3fe9f329/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:42:21-48
+118            </intent-filter>
+119        </activity>
+120
+121        <provider
+121-->[com.google.firebase:firebase-common:20.2.0] /home/dell/.gradle/caches/transforms-3/ef8423601b72496d12bca9ac87595f67/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:25:9-30:39
+122            android:name="com.google.firebase.provider.FirebaseInitProvider"
+122-->[com.google.firebase:firebase-common:20.2.0] /home/dell/.gradle/caches/transforms-3/ef8423601b72496d12bca9ac87595f67/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:26:13-77
+123            android:authorities="org.controls.smart_home.firebaseinitprovider"
+123-->[com.google.firebase:firebase-common:20.2.0] /home/dell/.gradle/caches/transforms-3/ef8423601b72496d12bca9ac87595f67/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:27:13-72
+124            android:directBootAware="true"
+124-->[com.google.firebase:firebase-common:20.2.0] /home/dell/.gradle/caches/transforms-3/ef8423601b72496d12bca9ac87595f67/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:28:13-43
 125            android:exported="false"
-125-->[com.google.android.gms:play-services-base:17.1.0] /home/dell/.gradle/caches/transforms-3/2f3aa72464889ee04298a4429d23aa5e/transformed/jetified-play-services-base-17.1.0/AndroidManifest.xml:25:13-37
-126            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-126-->[com.google.android.gms:play-services-base:17.1.0] /home/dell/.gradle/caches/transforms-3/2f3aa72464889ee04298a4429d23aa5e/transformed/jetified-play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+125-->[com.google.firebase:firebase-common:20.2.0] /home/dell/.gradle/caches/transforms-3/ef8423601b72496d12bca9ac87595f67/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:29:13-37
+126            android:initOrder="100" />
+126-->[com.google.firebase:firebase-common:20.2.0] /home/dell/.gradle/caches/transforms-3/ef8423601b72496d12bca9ac87595f67/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:30:13-36
 127
-128        <meta-data
-128-->[com.google.android.gms:play-services-basement:18.1.0] /home/dell/.gradle/caches/transforms-3/83770efba2c122ac4d7bf3f6e3fc9396/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
-129            android:name="com.google.android.gms.version"
-129-->[com.google.android.gms:play-services-basement:18.1.0] /home/dell/.gradle/caches/transforms-3/83770efba2c122ac4d7bf3f6e3fc9396/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
-130            android:value="@integer/google_play_services_version" />
-130-->[com.google.android.gms:play-services-basement:18.1.0] /home/dell/.gradle/caches/transforms-3/83770efba2c122ac4d7bf3f6e3fc9396/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
-131    </application>
+128        <activity
+128-->[com.google.android.gms:play-services-base:17.1.0] /home/dell/.gradle/caches/transforms-3/2f3aa72464889ee04298a4429d23aa5e/transformed/jetified-play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+129            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+129-->[com.google.android.gms:play-services-base:17.1.0] /home/dell/.gradle/caches/transforms-3/2f3aa72464889ee04298a4429d23aa5e/transformed/jetified-play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+130            android:exported="false"
+130-->[com.google.android.gms:play-services-base:17.1.0] /home/dell/.gradle/caches/transforms-3/2f3aa72464889ee04298a4429d23aa5e/transformed/jetified-play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+131            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+131-->[com.google.android.gms:play-services-base:17.1.0] /home/dell/.gradle/caches/transforms-3/2f3aa72464889ee04298a4429d23aa5e/transformed/jetified-play-services-base-17.1.0/AndroidManifest.xml:26:13-72
 132
-133</manifest>
+133        <meta-data
+133-->[com.google.android.gms:play-services-basement:18.1.0] /home/dell/.gradle/caches/transforms-3/83770efba2c122ac4d7bf3f6e3fc9396/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+134            android:name="com.google.android.gms.version"
+134-->[com.google.android.gms:play-services-basement:18.1.0] /home/dell/.gradle/caches/transforms-3/83770efba2c122ac4d7bf3f6e3fc9396/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+135            android:value="@integer/google_play_services_version" />
+135-->[com.google.android.gms:play-services-basement:18.1.0] /home/dell/.gradle/caches/transforms-3/83770efba2c122ac4d7bf3f6e3fc9396/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+136    </application>
+137
+138</manifest>
